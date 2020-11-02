@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { ShoppingListComponent } from './shopping-list.component';
 import { ShoppingEditComponent } from './shopping-edit/shopping-edit.component';
 import { SharedModule } from '../shared/shared.module';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { SharedModule } from '../shared/shared.module';
   ],
   imports: [
     FormsModule,
+    CommonModule,
     RouterModule.forChild([
       { path: '', component: ShoppingListComponent }
     ]),
